@@ -31,7 +31,8 @@ export function App() {
         <div>
           <h1>Dashboard de Ventas</h1>
           <p className="subtitle">
-            Todas las cifras se calculan con consultas SQL sobre PostgreSQL
+            Tienda ficticia de tecnología: datos de ejemplo generados con SQL. Todas las cifras se
+            calculan con consultas SQL sobre PostgreSQL.
           </p>
         </div>
         {bounds && range && <DateRangeFilter bounds={bounds} value={range} onChange={setRange} />}
