@@ -6,6 +6,10 @@
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 [![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg)](LICENSE)
 
+### 🔗 [Ver demo en vivo](https://dashboard-ventas-sql.vercel.app)
+
+Cambia el rango de fechas y mira cómo se recalculan los KPIs, gráficos y cohortes. Los datos son ficticios y no hace falta instalar nada. La primera carga puede tardar unos segundos porque la base de datos gratuita se suspende cuando no se usa.
+
 Dashboard analítico de ventas donde **toda la lógica de negocio vive en SQL**: KPIs comparados con el período anterior, tendencia mensual, análisis de Pareto, ventas por categoría y región, y retención de clientes por cohortes.
 La API en Node.js solo valida los parámetros y ejecuta las consultas. El frontend en React muestra los resultados.
 
@@ -79,6 +83,10 @@ erDiagram
 ├── client/               # React + Vite + Recharts
 └── docker-compose.yml
 ```
+
+## Demo pública
+
+Corre en **Vercel** con dos servicios en el mismo dominio ([`vercel.json`](vercel.json)): el cliente React como sitio estático y la API Express como función, que incluye los archivos `sql/queries/*.sql`. Los datos están en **PostgreSQL en Neon**, cargados con `npm run db:setup`.
 
 ## Cómo ejecutarlo
 
